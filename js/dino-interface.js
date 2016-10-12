@@ -1,15 +1,14 @@
+var Dino = require ('./../js/dino.js').dinoModule;
+var Player = require ('./../js/dino.js').playerModule;
+
+
 $(document).ready(function(){
-  alert("ohai");
+  var currentDino = new Dino();
+  currentDino.getIpsum();
+
   console.log("it worked yay");
 
-  var getDinos      = $.get('http://dinoipsum.herokuapp.com/api/?format=html&paragraphs=1&words=1'),
-      fillContainer = function(html) {
-        $('#dino-word').html(html);
-      },
-      oops = function() {
-        console.log('Where did all the dinosaurs go?');
-      };
-
-  getDinos.then(fillContainer, oops);
+  // var dinoWord = $('#dino-word').val();
+  var input = $("#userGameEntry").val();
 
 });
