@@ -3,12 +3,10 @@ var Player = require ('./../js/dino.js').playerModule;
 
 
 $(document).ready(function(){
-  var currentDino = new Dino();
-  currentDino.getIpsum();
-
-  console.log("it worked yay");
-
-  // var dinoWord = $('#dino-word').val();
-  var input = $("#userGameEntry").val();
+  var input = $("#userNameInput").val();
+  $('#userNameInput').submit(function(event) {
+    event.preventDefault();
+    newPlayer = new Player(input)
+  });
 
 });
