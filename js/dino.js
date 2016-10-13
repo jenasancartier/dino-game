@@ -8,8 +8,12 @@ function Player(playerName, correct, incorrect) {
   this.incorrect = 0;
 }
 
-function delayDisplay() {
+function delayDisplaySaved() {
   $("#saved").show();
+}
+
+function delayDisplayDead() {
+  $("#dead").show();
 }
 
 Dino.prototype.getIpsum = function() {
@@ -26,17 +30,24 @@ Dino.prototype.getIpsum = function() {
 Player.prototype.gameScore = function(gameInput) {
   if(gameInput == currentDino.capturedWord) {
     this.correct += 1;
-    setTimeout(delayDisplay, 85);
+    setTimeout(delayDisplaySaved, 10);
   } else {
     this.incorrect += 1;
+    setTimeout(delayDisplayDead, 10);
   }
 }
 
 Player.prototype.gameWin = function() {
   if(this.correct === 3) {
-    alert("you saved the dinos! hooray!")
+    $("#gameForm").hide();
+    $("#dino-word").hide();
+    $("#opening").hide();
+    $("#victory").show();
   } else if (this.incorrect === 3) {
-    alert("EVERYTHING DIED OH GOD");
+    $("#dead").hide();
+    $("#gameForm").hide();
+    $("#dino-word").hide();
+    $("#friends").show();
   }
 }
 

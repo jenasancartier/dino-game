@@ -11,7 +11,12 @@
   </head>
   <body>
     <div class="container">
-      <h1 class="animated tada">DINOMANIA</h1>
+        <h1 class="animated tada">DINOMANIA</h1>
+      <div id="opening">
+        <h2>ASTEROID INCOMING!</h2>
+        <p>It's up to you to save the dinos! <br>Copy the dinosaur's name correctly to save them-- <br>
+          but watch out! The asteroid could strike at any time!</p>
+      </div>
       <form id="nameForm">
         <div class="row row-centered">
           <div class="form-group text-center">
@@ -30,7 +35,7 @@
           <div class="row row-centered">
             <div class="form-group text-center">
               <div class="col-xs-4 col-xs-offset-4">
-              <label for="userGameEntry">TYPE THE DINO'S NAME CORRECTLY TO SAVE IT!</label><br>
+              <label for="userGameEntry"></label><br>
               <input id="userGameEntry" type="text"><br>
               <button id="gameSubmit" type="submit" class="btn btn-danger">Rescue!</button>
             </div>
@@ -38,6 +43,14 @@
         </div>
         </form>
         <h1 class="animated bounceInUp" id="saved">SAVED!</h1>
+        <!-- <h1 class="animated bounceOutDown" id="dead">TOO BAD!</h1> -->
+        <img id="friends" alt="sad dino declaring that all its friends are dead" src="img/friends.jpg"><br>
+        <div id="victory">
+          <img alt="dino with its thumbs up and text that says Dinos Saved!" src="img/saved.png"><br>
+          <button id="newGameStart" type="submit" class="btn btn-danger">New Game</button>
+        </div>
+        <img class="animated zoomInDown" id="dead" src="img/head-on.png" alt="scary meteor incoming!">
+
       </div>
     </div>
   </body>

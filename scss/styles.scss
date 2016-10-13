@@ -1,25 +1,40 @@
-$color: 	#172200;
+$darkgreen: 	#172200;
 $green:   rgba(131, 172, 49, 0.81);
 
 h1 {
-  color: $color;
+  color: $darkgreen;
+  background: -webkit-linear-gradient(#CE4022, #CFA601);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #DAD833;
   text-align: center;
   font-family: 'Luckiest Guy';
   font-size: 10em;
 }
 
 
-
 h2 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Luckiest Guy';
+  font-size: 3em;
 }
 
 h3 {
   font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  color: #CE4022;
 }
 
 p {
     font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    color: $darkgreen;
+}
+
+label {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2em;
+  color: #CE4022;
 }
 
 body {
@@ -35,22 +50,35 @@ button {
  background-color: $green;
  margin-top: 30px;
  border-radius: 10px;
- padding: 25px;
+ padding: 50px;
 }
 
 // .form-group {
 //   position: center;
 // }
-#saved {
+#saved, #dead {
   text-align: center;
   font-family: 'Luckiest Guy';
   font-size: 6em;
+  z-index: 2;
 }
+
+#gameSubmit {
+  background-color: #CE4022;
+}
+
 
 #game-go {
   display:none;
 }
 
-#saved {
+#saved, #dead, #friends, #victory {
   display:none;
+}
+
+#nameForm,  #game-go {
+  border-radius: 10px;
+  padding: 25px;
+  margin-top: 50px;
+  background-color: rgba(218, 216, 51, 0.85);
 }

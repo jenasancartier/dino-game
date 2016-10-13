@@ -19,16 +19,22 @@ $(document).ready(function(){
   $("#gameForm").submit(function(event){
     event.preventDefault();
     $("#saved").hide();
+    $("#dead").hide();
     var gameInput = $("#userGameEntry").val();
+    newPlayer.gameWin();
     newPlayer.gameScore(gameInput);
     console.log(newPlayer.correct);
     console.log(newPlayer.incorrect);
     console.log(gameInput);
-    newPlayer.gameWin();
     $("#userGameEntry").val("");
     currentDino.getIpsum();
-  
 
-  })
+
+  });
+  $('#newGameStart').click(function(event) {
+    event.preventDefault();
+    location.reload();
+  });
+
 
 });
