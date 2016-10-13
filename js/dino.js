@@ -40,14 +40,19 @@ Player.prototype.gameScore = function(gameInput) {
 Player.prototype.gameWin = function() {
   if(this.correct === 3) {
     $("#gameForm").hide();
+    $("#dead").hide();
     $("#dino-word").hide();
     $("#opening").hide();
     $("#victory").show();
+    $("#address").hide();
+
   } else if (this.incorrect === 3) {
     $("#dead").hide();
     $("#gameForm").hide();
     $("#dino-word").hide();
+    $("#opening").hide();
     $("#friends").show();
+    $("#address").hide();
   }
 }
 

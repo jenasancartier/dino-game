@@ -63,10 +63,9 @@ button {
   z-index: 2;
 }
 
-#gameSubmit {
+#gameSubmit, #newGameStart {
   background-color: #CE4022;
 }
-
 
 #game-go {
   display:none;
@@ -78,6 +77,7 @@ button {
 
 #nameForm,  #game-go {
   border-radius: 10px;
+  border: solid 2px #CE4022;
   padding: 25px;
   margin-top: 50px;
   background-color: rgba(218, 216, 51, 0.85);
