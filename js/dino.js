@@ -8,23 +8,29 @@ function Player(playerName, correct, incorrect) {
   this.incorrect = 0;
 }
 
-var getDino;
 
 Dino.prototype.getIpsum = function() {
     var that = this;
     $.get('http://dinoipsum.herokuapp.com/api/?format=json&paragraphs=1&words=1').then(function(response)
   {
     console.log(response[0][0]);
-    // dinoWord = response[0][0];
-    // capturedWord = response[0][0];
+
     $('#dino-word').text(response[0][0]);
     that.capturedWord = response[0][0];
     console.log("this.capturedWord " + that.capturedWord);
   });
 }
 
-var currentDino = new Dino();
-currentDino.getIpsum()
+Player.prototype.gameScore = function(gameInput) {
+  if(gameInput == currentDino.capturedWord) {
+    this.correct += 1;
+  } else {
+    this.incorrect += 1;
+  }
+}
+
+// var currentDino = new Dino();
+// currentDino.getIpsum()
 
 // setTimeout(consoleLogCapturedWord, 3000);
 
