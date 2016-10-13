@@ -31,7 +31,12 @@ $(document).ready(function(){
 
 
   });
-  $('#newGameStart').click(function(event) {
+  $('#newGameStart1').click(function(event) {
+    event.preventDefault();
+    location.reload();
+  });
+
+  $('#newGameStart2').click(function(event) {
     event.preventDefault();
     location.reload();
   });

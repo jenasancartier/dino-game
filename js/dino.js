@@ -39,8 +39,8 @@ Player.prototype.gameScore = function(gameInput) {
 
 Player.prototype.gameWin = function() {
   if(this.correct === 3) {
-    $("#gameForm").hide();
     $("#dead").hide();
+    $("#gameForm").hide();
     $("#dino-word").hide();
     $("#opening").hide();
     $("#victory").show();
