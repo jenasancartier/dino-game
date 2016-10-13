@@ -6,28 +6,38 @@
     <link rel="stylesheet" href="build/css/styles.css">
     <script src="build/js/vendor.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Luckiest+Guy" rel="stylesheet">
     <title>Dino Game</title>
   </head>
   <body>
     <div class="container">
       <h1>DINOMANIA</h1>
       <form id="nameForm">
-        <div class="form-group">
-          <label for="userNameInput">Enter your name:</label>
-          <input id="userNameInput" type="text" class="form-control" placeholder="Name here please!">
-          <button id="nameSubmit" type="submit" class="btn btn-primary">Submit</button>
-        </div>
+        <div class="row row-centered">
+          <div class="form-group text-center">
+            <div class="col-xs-4 col-xs-offset-4">
+              <label for="userNameInput">Enter your name:</label>
+              <input id="userNameInput" type="text" class="form-control" placeholder="Name here please!">
+              <button id="nameSubmit" type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </div>
+      </div>
       </form>
       <div id="game-go">
         <h2>Save the dinos, <span id="playerName"></span>!</h2>
         <h3 id="dino-word"></h3>
         <form id="gameForm">
-          <div class="form-group">
-            <label for="userGameEntry">COPY THE DINO WORD</label>
-            <input id="userGameEntry" type="text" class="form-control" placeholder="Watch for spelling and punctuation!">
-            <button id="gameSubmit" type="submit" class="btn btn-success">GO</button>
+          <div class="row row-centered">
+            <div class="form-group text-center">
+              <div class="col-xs-4 col-xs-offset-4">
+              <label for="userGameEntry">TYPE THE DINO'S NAME CORRECTLY TO SAVE IT!</label><br>
+              <input id="userGameEntry" type="text"><br>
+              <button id="gameSubmit" type="submit" class="btn btn-danger">Rescue!</button>
+            </div>
           </div>
+          </div
         </form>
+        <h1 id="saved">SAVED!</h1>
       </div>
     </div>
   </body>

@@ -29,6 +29,14 @@ Player.prototype.gameScore = function(gameInput) {
   }
 }
 
+Player.prototype.gameWin = function() {
+  if(this.correct === 3) {
+    alert("you saved the dinos! hooray!")
+  } else if (this.incorrect === 3) {
+    alert("EVERYTHING DIED OH GOD");
+  }
+}
+
 // var currentDino = new Dino();
 // currentDino.getIpsum()
 

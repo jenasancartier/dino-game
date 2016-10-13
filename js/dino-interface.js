@@ -23,6 +23,7 @@ $(document).ready(function(){
     console.log(newPlayer.correct);
     console.log(newPlayer.incorrect);
     console.log(gameInput);
+    newPlayer.gameWin(); 
     $("#userGameEntry").val("");
     currentDino.getIpsum();
   })

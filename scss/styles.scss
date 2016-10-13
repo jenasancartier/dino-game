@@ -1,7 +1,51 @@
-$color: 	#d36154;
+$color: 	#172200;
+$green:   rgba(131, 172, 49, 0.81);
 
 h1 {
   color: $color;
+  text-align: center;
+  font-family: 'Luckiest Guy';
+  font-size: 10em;
+}
+
+
+
+h2 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h3 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background-image: url(../../img/jungle.jpeg);
+  text-align: center;
+}
+
+button {
+  margin-top: 10px;
+}
+
+.container {
+ background-color: $green;
+ margin-top: 30px;
+ border-radius: 10px;
+ padding: 25px;
+}
+
+// .form-group {
+//   position: center;
+// }
+#saved {
+  text-align: center;
+  font-family: 'Luckiest Guy';
+  font-size: 6em;
+  margin-top: 20px;
 }
 
 #game-go {
