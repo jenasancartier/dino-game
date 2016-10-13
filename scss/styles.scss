@@ -45,9 +45,12 @@ button {
   text-align: center;
   font-family: 'Luckiest Guy';
   font-size: 6em;
-  margin-top: 20px;
 }
 
 #game-go {
+  display:none;
+}
+
+#saved {
   display:none;
 }

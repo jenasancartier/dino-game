@@ -18,14 +18,17 @@ $(document).ready(function(){
 
   $("#gameForm").submit(function(event){
     event.preventDefault();
+    $("#saved").hide();
     var gameInput = $("#userGameEntry").val();
     newPlayer.gameScore(gameInput);
     console.log(newPlayer.correct);
     console.log(newPlayer.incorrect);
     console.log(gameInput);
-    newPlayer.gameWin(); 
+    newPlayer.gameWin();
     $("#userGameEntry").val("");
     currentDino.getIpsum();
+  
+
   })
 
 });
