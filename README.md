@@ -1,6 +1,6 @@
 # [Dino Typing Game](https://jenasancartier.github.io/dino-game/)
 
-![project screenshot](/resources/images/screenshot.png)
+![project screenshot](/img/screenshot.png)
 
 
 __Version 1: October 15, 2016__
